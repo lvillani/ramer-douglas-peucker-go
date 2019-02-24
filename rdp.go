@@ -52,10 +52,10 @@ func RamerDouglasPeucker(points []Point, epsilon float64) []Point {
 
 	if maxDistance > epsilon {
 		ret1 := RamerDouglasPeucker(points[0:index+1], epsilon)
-		ret2 := RamerDouglasPeucker(points[index:len(points)], epsilon)
+		ret2 := RamerDouglasPeucker(points[index:], epsilon)
 
 		ret = append(ret, ret1[0:len(ret1)-1]...)
-		ret = append(ret, ret2[0:len(ret2)]...)
+		ret = append(ret, ret2...)
 	} else {
 		ret = []Point{points[0], points[last]}
 	}
