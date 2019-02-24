@@ -1,0 +1,16 @@
+# https://docs.microsoft.com/azure/devops/pipelines/languages/go
+
+trigger:
+  - master
+
+pool:
+  vmImage: "Ubuntu-16.04"
+
+variables:
+  GOROOT: "/usr/local/go1.11"
+
+steps:
+  - script: |
+      go version
+      go test -v ./...
+    displayName: "Run tests"
