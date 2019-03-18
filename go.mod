@@ -1,1 +1,3 @@
-module github.com/lvillani/go-ramer–douglas–peucker
+module github.com/lvillani/ramer–douglas–peucker-go
+
+go 1.12
