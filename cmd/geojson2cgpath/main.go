@@ -144,5 +144,5 @@ func points2swift(pp []rdp.Point) (string, error) {
 		return "", err
 	}
 
-	return string(buf.Bytes()), nil
+	return buf.String(), nil
 }
