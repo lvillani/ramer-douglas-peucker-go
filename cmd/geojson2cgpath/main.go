@@ -28,7 +28,7 @@ import (
 	"encoding/json"
 	"flag"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"os"
 	"strings"
@@ -93,7 +93,7 @@ func slurp(path string) (*polygon, error) {
 	}
 	defer f.Close()
 
-	buf, err := ioutil.ReadAll(f)
+	buf, err := io.ReadAll(f)
 	if err != nil {
 		return nil, err
 	}
