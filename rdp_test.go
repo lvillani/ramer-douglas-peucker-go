@@ -26,7 +26,7 @@ import (
 	"reflect"
 	"testing"
 
-	rdp "github.com/lvillani/ramer–douglas–peucker-go"
+	rdp "github.com/lvillani/ramer-douglas-peucker-go"
 )
 
 func TestRamerDouglasPeucker(t *testing.T) {

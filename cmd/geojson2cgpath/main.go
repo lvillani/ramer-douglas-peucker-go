@@ -34,7 +34,7 @@ import (
 	"strings"
 	"text/template"
 
-	rdp "github.com/lvillani/ramer–douglas–peucker-go"
+	rdp "github.com/lvillani/ramer-douglas-peucker-go"
 )
 
 var epsilon = flag.Float64("epsilon", 0.006, "")
